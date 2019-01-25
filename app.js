@@ -10,7 +10,7 @@ bot.on('message', (msg) => {
     let dataTrans = '';
     let msgText = msg.text;
     let signedTranserTx = transfer({
-        amount: 100000000,
+        amount: 1000000000,
         recipient: msgText,
     }, seed)
 
