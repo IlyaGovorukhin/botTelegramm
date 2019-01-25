@@ -10,7 +10,7 @@ bot.on('message', (msg) => {
     let dataTrans = '';
     let msgText = msg.text;
     let signedTranserTx = transfer({
-        amount: 100000,
+        amount: 100000000,
         recipient: msgText,
     }, seed)
 
@@ -38,7 +38,7 @@ bot.on('message', (msg) => {
             dataTrans = objectDATA.id
         }
         const chatId = msg.chat.id;
-        bot.sendMessage(chatId, dataTrans);
+        bot.sendMessage(chatId, 'id: '+ dataTrans);
     });
 });
 
